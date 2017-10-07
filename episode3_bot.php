@@ -7,7 +7,7 @@ fclose($handle);
 
 $json_out = json_decode($json_raw);
 
-include 'botid.php';
+$bot_id = "EURE BOT ID";
 include 'send_message.php';
 
 $command_arr = explode(" ",$json_out->message->text);
